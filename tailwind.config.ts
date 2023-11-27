@@ -6,6 +6,7 @@ const config: Config = {
     './src/components/**/*.{js,ts,jsx,tsx,mdx}',
     './src/app/*.{js,ts,jsx,tsx,mdx}',
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
+    "./node_modules/flowbite-react/**/*.js",
   ],
   theme: {
     extend: {
@@ -17,7 +18,8 @@ const config: Config = {
     },
   },
   plugins: [
-    require("daisyui")
+    require("daisyui"),
+    require("flowbite/plugin")
   ],
 }
 export default config
