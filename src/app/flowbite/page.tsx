@@ -250,6 +250,43 @@ const FlowBitePage = () => {
             </Table.Body>
           </Table>
         </div>
+        <div className="flex flex-col gap-2">
+          <h4 className="text-xl">Drawer {`(DaisyUI)`}</h4>
+          <div className="drawer drawer-end">
+            <input id="my-drawer" type="checkbox" className="drawer-toggle" />
+            <div className="drawer-content">
+              {/* Page content here */}
+              <label
+                htmlFor="my-drawer"
+                className="btn btn-primary drawer-button"
+              >
+                Open drawer
+              </label>
+            </div>
+            <div className="drawer-side">
+              <label
+                htmlFor="my-drawer"
+                aria-label="close sidebar"
+                className="drawer-overlay"
+              ></label>
+              <div className="menu p-4 w-80 min-h-full bg-base-200 text-base-content">
+                <h4 className="text-2xl">For Filters</h4>
+                <ul>
+                  {/* Sidebar content here */}
+                  <li>
+                    <a>Sidebar Item 1</a>
+                  </li>
+                  <li>
+                    <a>Sidebar Item 2</a>
+                  </li>
+                  <li>
+                    <a>Sidebar Item 3</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );
