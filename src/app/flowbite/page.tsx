@@ -21,7 +21,7 @@ const FlowBitePage = () => {
   const onPageChange = (page: number) => setCurrentPage(page);
 
   return (
-    <div className="w-screen h-screen flex flex-col gap-4 p-4">
+    <div className="w-full h-full flex flex-col gap-4 p-4">
       <h2 className="text-4xl">FlowBite Components</h2>
       <Link
         className="w-auto text-blue-500 underline"
@@ -31,7 +31,7 @@ const FlowBitePage = () => {
         Docs
       </Link>
       <hr />
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 grid-rows-3 gap-6">
         <div className="flex flex-col gap-2">
           <h4 className="text-xl">Alert</h4>
           <Alert color="info">
@@ -106,7 +106,7 @@ const FlowBitePage = () => {
         </div>
         <div className="flex flex-col gap-2 max-w-full overflow-auto">
           <h4 className="text-xl">Accordion</h4>
-          <Accordion>
+          <Accordion className="w-4/5">
             <Accordion.Panel>
               <Accordion.Title>What is Flowbite?</Accordion.Title>
               <Accordion.Content>
@@ -188,7 +188,7 @@ const FlowBitePage = () => {
         </div>
         <div className="flex flex-col gap-2 max-w-full overflow-auto">
           <h4 className="text-xl">Table</h4>
-          <Table hoverable>
+          <Table className="w-4/5" hoverable>
             <Table.Head>
               <Table.HeadCell>Product name</Table.HeadCell>
               <Table.HeadCell>Color</Table.HeadCell>
@@ -286,6 +286,22 @@ const FlowBitePage = () => {
               </div>
             </div>
           </div>
+        </div>
+        <div className="flex flex-col gap-2">
+          <h4 className="text-xl">Skeleton {`(Pure FlowBite)`}</h4>
+
+          <div role="status" className="max-w-sm animate-pulse">
+            <div className="h-2.5 bg-gray-200 rounded-full dark:bg-gray-700 w-48 mb-4"></div>
+            <div className="h-2 bg-gray-200 rounded-full dark:bg-gray-700 max-w-[360px] mb-2.5"></div>
+            <div className="h-2 bg-gray-200 rounded-full dark:bg-gray-700 mb-2.5"></div>
+            <div className="h-2 bg-gray-200 rounded-full dark:bg-gray-700 max-w-[330px] mb-2.5"></div>
+            <div className="h-2 bg-gray-200 rounded-full dark:bg-gray-700 max-w-[300px] mb-2.5"></div>
+            <div className="h-2 bg-gray-200 rounded-full dark:bg-gray-700 max-w-[360px]"></div>
+            <span className="sr-only">Loading...</span>
+          </div>
+        </div>
+        <div className="flex flex-col gap-2">
+          <h4 className="text-xl">Other</h4>
         </div>
       </div>
     </div>
