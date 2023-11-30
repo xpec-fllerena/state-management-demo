@@ -12,6 +12,9 @@ export default function Home() {
           <Link className="btn bg-blue-600" href="/flowbite">
             Flowbite
           </Link>
+          <Link className="btn bg-blue-600" href="/override">
+            Override
+          </Link>
         </div>
       </div>
     </div>

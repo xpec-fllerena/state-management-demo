@@ -21,7 +21,8 @@
     "paths": {
       "@@_root/*": ["./src/*"],
       "@@_components/*": ["./src/components/*"],
-      "@@_hooks/*": ["./src/hooks/*"]
+      "@@_hooks/*": ["./src/hooks/*"],
+      "@@_overrides/*": ["./src/overrides/*"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
