@@ -79,6 +79,7 @@ export default function StatesPage() {
 
   useEffect(() => {
     fetchRecords();
+    //eslint-disable-next-line
   }, [records]);
 
   const handleDragEnd = async (e: any) => {

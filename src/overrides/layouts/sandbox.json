@@ -1,0 +1,8 @@
+{
+  "base": [
+    "components/ComponentCore"
+  ],
+  "dev": [],
+  "uat": [],
+  "prod": []
+}

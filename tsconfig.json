@@ -20,7 +20,10 @@
     ],
     "paths": {
       "@@_root/*": ["./src/*"],
+      "@@_classes": ["./src/classes/index.ts"],
+      "@@_classes/*": ["./src/classes/*"],
       "@@_components/*": ["./src/components/*"],
+      "@@_constants/*": ["./src/constants/*"],
       "@@_hooks/*": ["./src/hooks/*"],
       "@@_overrides/*": ["./src/overrides/*"]
     }

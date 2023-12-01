@@ -1,14 +1,7 @@
-
-import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import './globals.css'
 
 const inter = Inter({ subsets: ['latin'] })
-
-export const metadata: Metadata = {
-  title: 'Testing Plugins',
-  description: 'DEMO',
-}
 
 export default function RootLayout({
   children,
@@ -17,6 +10,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" data-theme="light">
+      <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=2,shrink-to-fit=no" />
+      <meta name="color-scheme" content="light" />
+      <title>DEMO</title>
       <body className={inter.className}>{children}</body>
     </html>
   )
