@@ -1,6 +1,7 @@
 {
   "base": [
-    "components/ComponentCore"
+    "components/ComponentCore",
+    "components/Layout"
   ],
   "env": [],
   "uat": [],

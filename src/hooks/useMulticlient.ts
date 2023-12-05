@@ -1,3 +1,4 @@
+"use client"
 import dynamic from "next/dynamic";
 import * as themes from "@@_overrides/layouts";
 import { NAME_CLIENT, ENV_CLIENT } from "@@_constants/env_costants";
